@@ -1,0 +1,29 @@
+cat > .gitignore << 'EOF'
+# Build folders
+.buildozer/
+bin/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+kivy_venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+EOF
+
+# Verify it was created
+ls -la .gitignore
