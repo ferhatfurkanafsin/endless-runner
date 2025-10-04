@@ -20,10 +20,10 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.11,kivy==2.3.0,libffi==3.4.2,sdl2,sdl2_image,sdl2_mixer,sdl2_ttf
+requirements = python3,kivy
 
 # (str) Supported orientation (landscape, sensorLandscape, portrait or all)
-orientation = landscape
+orientation = portrait
 
 # (bool) Indicate if the application should be fullscreen or not
 fullscreen = 0
@@ -36,9 +36,6 @@ android.api = 33
 
 # (int) Minimum API your APK will support.
 android.minapi = 21
-
-# (str) Android NDK version to use
-android.ndk = 23c
 
 # (bool) If True, then automatically accept SDK license
 android.accept_sdk_license = True
@@ -54,12 +51,6 @@ android.copy_libs = 1
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 android.archs = arm64-v8a,armeabi-v7a
-
-# (str) python-for-android branch to use
-p4a.branch = develop
-
-# (str) Bootstrap to use for application
-p4a.bootstrap = sdl2
 
 
 [buildozer]
